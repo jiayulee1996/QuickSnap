@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 using System;
+=======
+﻿using System;
+>>>>>>> fb37e56... First commit
 using SwinGameSDK;
 
 #if DEBUG
@@ -37,10 +41,13 @@ namespace CardGames.GameLogic
 		public Snap ()
 		{
 			_deck = new Deck ();
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 			_gameTimer = SwinGame.CreateTimer ();
 >>>>>>> Stashed changes
+=======
+>>>>>>> fb37e56... First commit
 		}
 
 		/// <summary>
@@ -95,12 +102,16 @@ namespace CardGames.GameLogic
 				_started = true;
 				_deck.Shuffle ();		// Return the cards and shuffle
 
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 				FlipNextCard ();		// Flip the first card...
 =======
 				FlipNextCard ();
 				_gameTimer.Start ();// Flip the first card...
 >>>>>>> Stashed changes
+=======
+				FlipNextCard ();		// Flip the first card...
+>>>>>>> fb37e56... First commit
 			}
 		}
 			
@@ -120,6 +131,7 @@ namespace CardGames.GameLogic
 		/// </summary>
 		public void Update()
 		{
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 			//TODO: implement update to automatically slip cards!
 =======
@@ -129,6 +141,9 @@ namespace CardGames.GameLogic
 				FlipNextCard ();
 			}
 >>>>>>> Stashed changes
+=======
+			//TODO: implement update to automatically slip cards!
+>>>>>>> fb37e56... First commit
 		}
 
 		/// <summary>
@@ -160,10 +175,13 @@ namespace CardGames.GameLogic
 
 			// stop the game...
 			_started = false;
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
 			_gameTimer.Stop ();
 >>>>>>> Stashed changes
+=======
+>>>>>>> fb37e56... First commit
 		}
 	
 		#region Snap Game Unit Tests
