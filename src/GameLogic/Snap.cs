@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using SwinGameSDK;
 
 #if DEBUG
@@ -37,6 +37,10 @@ namespace CardGames.GameLogic
 		public Snap ()
 		{
 			_deck = new Deck ();
+<<<<<<< Updated upstream
+=======
+			_gameTimer = SwinGame.CreateTimer ();
+>>>>>>> Stashed changes
 		}
 
 		/// <summary>
@@ -91,7 +95,12 @@ namespace CardGames.GameLogic
 				_started = true;
 				_deck.Shuffle ();		// Return the cards and shuffle
 
+<<<<<<< Updated upstream
 				FlipNextCard ();		// Flip the first card...
+=======
+				FlipNextCard ();
+				_gameTimer.Start ();// Flip the first card...
+>>>>>>> Stashed changes
 			}
 		}
 			
@@ -111,7 +120,15 @@ namespace CardGames.GameLogic
 		/// </summary>
 		public void Update()
 		{
+<<<<<<< Updated upstream
 			//TODO: implement update to automatically slip cards!
+=======
+			if (_gameTimer.Ticks > _flipTime) {
+
+				_gameTimer.Reset ();
+				FlipNextCard ();
+			}
+>>>>>>> Stashed changes
 		}
 
 		/// <summary>
@@ -143,6 +160,10 @@ namespace CardGames.GameLogic
 
 			// stop the game...
 			_started = false;
+<<<<<<< Updated upstream
+=======
+			_gameTimer.Stop ();
+>>>>>>> Stashed changes
 		}
 	
 		#region Snap Game Unit Tests

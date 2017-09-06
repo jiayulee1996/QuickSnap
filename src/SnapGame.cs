@@ -24,7 +24,11 @@ namespace CardGames
 
 			if (SwinGame.KeyTyped (KeyCode.vk_SPACE))
 			{
+<<<<<<< Updated upstream
 				myGame.FlipNextCard ();
+=======
+				myGame.Start ();
+>>>>>>> Stashed changes
 			}
 		}
 
@@ -34,7 +38,11 @@ namespace CardGames
 		/// <param name="myGame">The details of the game -- mostly top card and scores.</param>
 		private static void DrawGame(Snap myGame)
 		{
+<<<<<<< Updated upstream
 			SwinGame.DrawBitmap("cardsBoard.png", 0, 0);
+=======
+			SwinGame.ClearScreen(Color.White);
+>>>>>>> Stashed changes
 
 			// Draw the top card
 			Card top = myGame.TopCard;
